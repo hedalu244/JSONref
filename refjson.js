@@ -31,7 +31,7 @@ function stringify(value, dic=[], path=".") {
   }
 }
 
-parse = (() => {
+var parse = (() => {
   function token(token) {
     return function(text) {
       if(text.startsWith(token))
